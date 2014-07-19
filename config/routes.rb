@@ -1,8 +1,10 @@
 AgileDevelopment::Application.routes.draw do
 
-  root to: "dashboard#home"
-
-
+  root to: "dashboard#login"
+  get "signin", to: "dashboard#login"
+  post "signin", to: "dashboard#login"
+  get "home", to: "dashboard#home"
+  get "logout", to: "dashboard#logout"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
