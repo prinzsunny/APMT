@@ -1,5 +1,7 @@
 AgileDevelopment::Application.routes.draw do
 
+  devise_for :users
+
   root to: "dashboard#login"
   get "signin", to: "dashboard#login"
   post "signin", to: "dashboard#login"
